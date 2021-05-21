@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <title>formulir</title>
+
+<style>
+  body { background-color:black;
+  color:white}
+
+  h1 { text-align:center}
+
+</style>
+
+</head>
+
+<body>
+  <h1>shadysucks</h1>
+
+  <p style="text-align:center">Jika ingin selamat, masukan data diri anda!</p>
+
+  <form autocomplete="off" id="form1" novalidate>
+    <label for="nama">nama:</label><br>
+    <input type="text" id="nama" name="nama" size="40" required><br>
+    <labes for="email">e-mail:</label><br>
+    <input type="email" id="email" name="email" size="30" 
+    placeholder="example@gmail.com" required><br>
+    <label for="usia">tanggal lahir:</label><br>
+    <input type="date" id="usia" name="usia" required><br>
+    <label for="gender">gender:</label><br>
+    <select id="gender" name="gender" required>
+      <option/>
+      <option>pria</option>
+      <option>wanita</option>
+    </select><br>
+    <label for="aaa">pengguna:</label><br>
+    <input id="aaa" list="browser" name="browser" required>
+    <datalist id="browser">
+      <option value="chrome">
+      <option value="opera">
+      <option value="safari">
+    </datalist><br>
+  </form>
+
+    <label for="alasan">alasan anda hidup:</label><br>
+    <textarea id="alasan" name="alasan hidup" rows="10" cols="40" form="form1" required></textarea>
+  
+
+  <fieldset>
+    <legend>hitung!</legend>
+    <form
+      oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+      0
+      <input type="range" id="a" name="a" value="50">
+      100 +
+      <input type="number" id="b" name="b" value="50">
+      =
+      <output name="x" for="a b"></output>
+    </form>
+  </fieldset>
+
+</body>
+
+</html>
